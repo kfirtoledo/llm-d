@@ -111,14 +111,14 @@ Single source of truth. Status is owner-reported (from the SGLang tracking issue
 | Feature / gap | Status | Target | Issue / owner |
 |---|---|---|---|
 | Approximate prefix cache | ✅ Done | 0.8 | Rahul |
-| Precise prefix-cache routing (KV events) | 🔄 In progress | 0.8 | @zdtsw |
+| Precise prefix-cache routing (KV events) | 🔄 In progress | 0.8 | @zdtsw ([#1643](https://github.com/llm-d/llm-d/pull/1643)) |
 | Tiered prefix cache **L1/L2** (CPU offload) | ✅ Done | 0.8 | Rahul |
 | Latency predictor | ✅ Done | 0.8 | Rahul |
 | Flow control | ✅ Done | 0.8 | — |
 | Batch processing | ✅ Done | 0.8 | — |
-| **Observability — SGLang in Grafana** 🆕 | ✅ Done | 0.8 | sudoalok |
-| **gRPC support** 🆕 | 🔄 In progress | 1.0 | Ryan/Rahul |
-| P/D disaggregation — **RDMA recipes** | 🔄 In progress (docs ✅ [#1641](https://github.com/llm-d/llm-d/issues/1641) closed Jul 21) | 0.9 | Rahul |
+| **Observability — SGLang in Grafana** 🆕 | ✅ Done | 0.8 | sudoalok ([#1665](https://github.com/llm-d/llm-d/issues/1665)) |
+| **gRPC support** 🆕 | 🔄 In progress | 1.0 | Ryan/Rahul ([llm-d-inference-scheduler#1035](https://github.com/llm-d/llm-d-inference-scheduler/pull/1035)) |
+| P/D disaggregation — **RDMA recipes** | 🔄 In progress (docs ✅ [#1641](https://github.com/llm-d/llm-d/issues/1641) closed Jul 21) | 0.9 | Rahul; recipe [#1650](https://github.com/llm-d/llm-d/pull/1650) |
 | P/D benchmarking (Prism) | ⬜ Not started | 0.9 | [#1752](https://github.com/llm-d/llm-d/issues/1752), [#1749](https://github.com/llm-d/llm-d/issues/1749) |
 | Wide-EP / large-MoE — recipes + benchmarks | ⬜ Not started | 0.9 | [#2040](https://github.com/llm-d/llm-d/issues/2040) |
 | Tiered prefix cache **L3/L4** (lmcache/lustre/mooncake) | 🔄 Partial — SGLang **fs/Lustre L3 ✅ merged** ([#2093](https://github.com/llm-d/llm-d/pull/2093)); SGLang **mooncake pending** (mooncake L3 exists for vLLM only, [#1826](https://github.com/llm-d/llm-d/pull/1826)) | 0.9 | Owner Yuchen; [#1967](https://github.com/llm-d/llm-d/issues/1967) (lustre, ✅), [#1980](https://github.com/llm-d/llm-d/issues/1980) (sglang mooncake); router [#1010](https://github.com/llm-d/llm-d-router/issues/1010) closed |
@@ -129,7 +129,8 @@ Single source of truth. Status is owner-reported (from the SGLang tracking issue
 | CI across well-lit paths | ⬜ Not started | — | [#2045](https://github.com/llm-d/llm-d/issues/2045) |
 | TPU support — recipes + benchmarks | ⬜ Not started | 1.0 | [#666](https://github.com/llm-d/llm-d/issues/666) |
 | Workload autoscaling | ⬜ Not started (needs verification) | TBD | — |
-| Approx prefix cache — Prism entry | ⬜ Not started | — | Rahul/Radhika |
+| Approx prefix cache — Prism entry | ⬜ Not started | — | Rahul/Radhika ([llm-d-prism#66](https://github.com/llm-d/llm-d-prism/issues/66)) |
+| Pod snapshots with SGLang | ⬜ Not started | 0.10 | roadmap (approach TBD, follows vLLM) |
 | Production-readiness / Ascend NPU (question) | — | — | [#2060](https://github.com/llm-d/llm-d/issues/2060) |
 
 ---
